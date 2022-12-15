@@ -15,13 +15,29 @@
   -moz-text-fill-color: transparent;
 }
 
+.main__content p, .main__btn, .main__btn a, .main__btn:hover {
+  color: #fff;
+}
+
+.main__btn, .main__btn a {
+  position: relative;
+}
+
+.main__btn, .main__btn:after {
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__container, .main__btn:hover:after {
+  width: 100%;
+}
+
 .main__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-self: center;
   max-width: 1300px;
-  width: 100%;
   height: 90vh;
   margin: 0 auto;
   padding: 0 50px;
@@ -41,3 +57,38 @@
   font-size: 2rem;
   font-weight: 700;
 }
+
+.main__btn {
+  background-image: linear-gradient(to top, #f77962 0%, #fe5196 100%);
+  padding: 14px 32px;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+}
+
+.main__btn a {
+  z-index: 2;
+  text-decoration: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4837ff;
+}
+
+.main__img--container {
+  text-align: center;
+}
+
+#main__img {
+  width: 80%;
+  height: 80%;
+}
+
