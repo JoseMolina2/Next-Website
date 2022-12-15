@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Next Website</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" type="text/css" href="hero.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+    />
   </head>
 
   <body>
+    <!--Navbar Section-->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="/" id="navbar__logo">NEXT</a>
+        <a href="/" id="navbar__logo"><i class="far fa-gem"></i>NEXT</a>
         <div id="mobile-menu" class="navbar__toggle">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -31,8 +38,25 @@
             <a href="/" class="button"> Sign Up </a>
           </li>
         </ul>
-      </div>
+      </div>s
     </nav>
+
+    <!--Hero Section-->
+    <main class="main">
+      <div class="main__container">
+        <div class="main_content">
+          <h1>NEXT GENERATION</h1>
+          <h2>TECHNOLOGY</h2>
+          <p>see what makes us different</p>
+          <button class="main__btn">
+            <a href="/"></a>
+          </button>
+        </div>
+        <div class="main__img--container">
+          <img src="images/message.svg" alt="Messages" id="main__img" />
+        </div>
+      </div>
+    </main>
   </body>
 
   <script src="app.js"></script>
