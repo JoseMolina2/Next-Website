@@ -1,1 +1,2 @@
-# Next-Website Responsive landing web page for a site. No need of installation just need to run index.html.
+# Next-Website Responsive 
+Landing web page for a site. No need of installation just need to run index.html.
